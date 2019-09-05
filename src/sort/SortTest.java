@@ -1,5 +1,6 @@
 package sort;
 
+import com.sun.xml.internal.bind.v2.model.annotation.Quick;
 import sort.MergeSort;
 
 import java.util.Arrays;
@@ -44,12 +45,23 @@ public class SortTest {
         for(int i = 0; i < compareTime; i++) {
             int[] arr = generateRandomArray(size, value);
             int[] arr1 = copyArray(arr);
-//            BubbleSort.sort(arr); //测试冒泡排序
-//            SelectionSort.sort(arr); //测试选择排序
-//            InsertSort.sort(arr); //测试插入排序
-//            MergeSort.sort(arr); //测试归并排序
+            int[] arr2 = copyArray(arr);
+//            for(int j = 0;  j < arr.length; j++) {
+//                System.out.println(arr[j]);
+//            }
+//            BubbleSort.sort(arr);  //测试冒泡排序
+//            SelectionSort.sort(arr);  //测试选择排序
+//            InsertSort.sort(arr);  //测试插入排序
+//            MergeSort.sort(arr);  //测试归并排序
+//            QuickSort.sort(arr);  //测试快速排序
+            HeapSort.sort(arr);  //测试堆排序
             testMethod(arr1);
             if(!isEqual(arr, arr1)) result = false;
+            if(result == false) {
+                for(int j = 0; j < arr2.length; j++)
+                    System.out.println(arr2[j]);
+                break;
+            }
         }
         if(result) System.out.println("success");
         else System.out.println("false");
