@@ -54,7 +54,8 @@ public class SortTest {
 //            InsertSort.sort(arr);  //测试插入排序
 //            MergeSort.sort(arr);  //测试归并排序
 //            QuickSort.sort(arr);  //测试快速排序
-            HeapSort.sort(arr);  //测试堆排序
+//            HeapSort.sort(arr);  //测试堆排序
+            QuickSort2.quickSort(arr,0,arr.length-1);
             testMethod(arr1);
             if(!isEqual(arr, arr1)) result = false;
             if(result == false) {
