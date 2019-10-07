@@ -24,9 +24,12 @@ public class QueueImpStack {
             temp.add(data.poll());
         }
         int result = data.poll();
-        while(temp.size() > 0) {
-            data.add(temp.poll());
-        }
+//        while(temp.size() > 0) {
+//            data.add(temp.poll());
+//        }
+        Queue<Integer> swap = data;
+        data = temp;
+        temp = swap;
         return result;
     }
 
