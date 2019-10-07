@@ -23,5 +23,9 @@ Add my personal answer about the Dutch Nation Flag question, and add other sort 
 2019.10.06&emsp;17:25
 完成之前未完成的关于基本的几种数据结构学习的代码，为了尽快完成，好进入到后面的学习，此处完成代码大都不考虑边界条件。  
 
+2019.10.07&emsp9:47    
+为了避免都挤在一个包下面，开始用日期命名包名,由于不能为纯数字包名前加a  
+猫狗队列问题、转圈打印矩阵问题  
+
 
 
